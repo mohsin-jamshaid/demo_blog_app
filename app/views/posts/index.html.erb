@@ -1,1 +1,9 @@
-<div class="title"> Blog Index </div>
+<h1 class="title"> Blog Index </h1>
+
+<p><%= link_to 'Create Post', new_post_path %></p>
+
+<% @posts.each do |post| %>
+  <p><%= post.title %></p>
+  <p><%= post.content %></p>
+  <p><%= link_to "Show", post_path(post) %></p>
+<% end %>
