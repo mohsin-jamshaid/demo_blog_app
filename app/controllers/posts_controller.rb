@@ -31,7 +31,9 @@ class PostsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @comment = @post.comments.build
+  end
 
   def destroy
     @post.destroy

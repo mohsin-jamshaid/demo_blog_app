@@ -1,0 +1,5 @@
+<% if commenter.id.present? %>
+    <p>Name: <%= commenter.name %></p>
+    <p>Comment: <%= commenter.comment %></p>
+    <p><%= link_to 'Delete Comment', post_comment_path(@post, commenter), method: :delete, data: { confirm: "Are you sure?"} %></p>
+<% end %>

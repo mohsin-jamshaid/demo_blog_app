@@ -1,0 +1,17 @@
+<%= form_for [@post, @comment] do |f| %>
+  <%= render "layouts/error_messages", resource: @comment %>
+
+  <div class="form-group">
+    <%= f.label :commenter_name %><br>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
