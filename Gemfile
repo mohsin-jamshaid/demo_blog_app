@@ -49,7 +49,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Make errors looking better
-  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'better_errors', '~> 2.8'
   gem 'binding_of_caller'
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.15'
